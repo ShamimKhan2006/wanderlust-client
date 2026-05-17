@@ -1,24 +1,15 @@
-import { Button, Card } from '@heroui/react';
+import { Button } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
 import { CiLocationOn } from 'react-icons/ci';
 import { FaArrowTrendUp } from 'react-icons/fa6';
 import { MdOutlineCalendarMonth } from 'react-icons/md';
 
-
-const DestinationPage = async({destination}) => {
-
-    const res=await fetch(`${process.env.NEXT_PUBLIC_SERVER}/destinations`)
-    const data= await res.json()
-  
-      
+const DestinationCard = ({item}) => {
     return (
-        <div className='grid grid-cols-4 gap-4 max-w-7xl mx-auto my-20 text-white'>
-            {
-                data.map(item => <div key={item._id}>
-                    <div className='p-4 rounded-2xl border space-y-4 text-white'>
+        <div>
+            <div className='p-4 rounded-2xl border space-y-4'>
                         <Image src={item.imageUrl} width={500} height={500} alt='travel'className='mb-4 object-cover'></Image>
                          <div className='flex gap-2 items-center'>
                             <CiLocationOn />
@@ -34,14 +25,12 @@ const DestinationPage = async({destination}) => {
                         </div>
                         <Link href={`/destinations/${item._id}`}><Button variant='secondary' className="text-blue-400"> 
                            <span> Book now</span>
-                             <FaArrowTrendUp />
+                             <FaArrowTrendUp/>
                             </Button></Link>
                        
                     </div>
-                </div>)
-            }
         </div>
     );
 };
 
-export default DestinationPage;
+export default DestinationCard;

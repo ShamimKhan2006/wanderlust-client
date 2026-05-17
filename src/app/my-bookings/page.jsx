@@ -7,7 +7,7 @@ import { Button } from '@heroui/react';
 import { CencelModal } from '@/componets/CencelModal';
 
 
-const MyBookingsPage =async () => {
+const MyBookingsPage =async ({destination}) => {
     const session = await auth.api.getSession({
     headers: await headers() // you need to pass the headers object.
 })
@@ -31,7 +31,7 @@ const user=session?.user
          }
 
     return (
-        <div className='w-8/12 mx-auto'>
+        <div className='w-8/12 mx-auto text-white'>
             <h1 className='font-bold text-2xl'>My Bookings</h1>
             <p>Manage and view your upcoming travel plans</p>
 

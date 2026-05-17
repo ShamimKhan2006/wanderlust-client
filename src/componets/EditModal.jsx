@@ -29,7 +29,7 @@ const EditModal = ({item}) => {
 
 
     return (
-        <div>
+        <div className="text-white">
              <Modal>
         <Button className="mt-4 border" variant="Outline"   ><BiEdit></BiEdit> Edit</Button>
       <Modal.Backdrop>

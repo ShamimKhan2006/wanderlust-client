@@ -35,7 +35,7 @@ const DetailsPage =async ({params}) => {
         <div className='container mx-auto pb-40'>
 
          
-            <div className='flex justify-end gap-4'>
+            <div className='flex justify-end gap-4 text-white'>
                 <EditModal className="mb-4 " item={item}></EditModal>
                  <div className='mt-4 border rounded-full '>
                       <DeleteAlert item={item}></DeleteAlert>
@@ -44,7 +44,7 @@ const DetailsPage =async ({params}) => {
             </div>
          
         
-                    <div className='p-4 rounded-2xl border space-y-4 mt-10 '>
+                    <div className='p-4 rounded-2xl border space-y-4 mt-10  text-white'>
                         <Image src={item.imageUrl} width={1600} height={500} alt='travel'></Image>
                       
                          <div className='flex gap-2 items-center'>
@@ -61,7 +61,7 @@ const DetailsPage =async ({params}) => {
                             <MdOutlineCalendarMonth />
                             <p>{item.duration}/6 Nigths</p>
                         </div>
-                        <h1 className='mt-10 font-bold text-2xl '>Over view</h1>
+                        <h1 className='mt-10 font-bold text-2xl text-white '>Over view</h1>
                         <p>{item.description}</p>
                        </div>
 

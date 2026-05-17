@@ -22,7 +22,8 @@ const { data: session } = authClient.useSession()
      }
 
     return (
-        <nav className='flex justify-between items-center p-4 text-white'>
+       <div className=' text-white py-3 '>
+         <nav className='flex justify-between items-center max-w-7xl mx-auto' >
             <ul className='flex gap-8'>
                 <li><Link href={"/"}>Home</Link></li>
                 <li><Link href={"/destinations"}>Destinations</Link></li>
@@ -32,7 +33,7 @@ const { data: session } = authClient.useSession()
             </ul>
 
             <div>
-                <Image src={"/assets/Wanderlast.png"} width={150} height={150} alt='logo' className='mr-65'></Image>
+                <Image src={"/assets/Wanderlast.png"} width={150} height={150} alt='logo '></Image>
             </div>
              <ul className='flex gap-8'>
                 <li><Link href={"/"} className='flex gap-2 justify-center items-center mt-2 '>
@@ -61,6 +62,7 @@ const { data: session } = authClient.useSession()
             </ul>
 
         </nav>
+       </div>
     );
 };
 

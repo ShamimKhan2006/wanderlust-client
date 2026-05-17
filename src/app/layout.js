@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${jus.className}} h-full antialiased`}
     >
-      <body className={`${jus.className} min-h-full flex flex-col   bg-[#4d9bb8]`}>
+      <body className={`${jus.className} min-h-full flex flex-col  bg-gradient-to-br from-black via-slate-900 to-sky-950`}>
         <ToastContainer />
         <Navber></Navber>
         {children}

@@ -20,7 +20,7 @@ export function DeleteAlert({item}) {
 
   return (
     <AlertDialog>
-      <Button className='text-red-400' variant="Outline"><TrashBin></TrashBin> Delete </Button>
+      <Button className='text-red-400 ' variant="Outline"><TrashBin></TrashBin> Delete </Button>
       <AlertDialog.Backdrop>
         <AlertDialog.Container>
           <AlertDialog.Dialog className="sm:max-w-400px">

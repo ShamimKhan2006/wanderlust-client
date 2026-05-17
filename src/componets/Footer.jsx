@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="bg-black mt-20 text-gray-400 px-6 md:px-16 py-16">
+        <div className="bg-cyan-500 mt-20 text-gray-400 px-6 md:px-16 py-16 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <h1 className="text-6xl md:text-7xl font-bold text-white">
@@ -22,7 +22,7 @@ const Footer = () => {
               Subscribe for exclusive travel deals and inspiration.
             </p>
 
-            <div className="flex items-center bg-gray-800 px-4 py-3">
+            <div className="flex items-center bg-cyan-500 px-4 py-3">
               <input
                 type="email"
                 placeholder="Enter email"
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className='text-white'>
             <h3 className="text-white mb-3 tracking-wide">QUICK LINKS</h3>
             <ul className="space-y-2">
               <li className="hover:text-white cursor-pointer">Home</li>
